@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Challenge</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/icon.ico">
+</head>
+<body>
+    <div class="main">
+        <div class="main-box">
+            <div class="content" id="content">
+                <header>
+                    <div class="cloud-tag">
+                        <div id="cloud-name">CLOUD NAME</div>
+                        <h5 id="section">·</h5>
+                        <h5 id="module-name">MODULE NAME</h5>
+                    </div>
+                    <h1 id="header">Header here 2 lines max Lorem ipsum dolor sit</h1>
+                </header>
+                <div class="description">
+                    <h3 id="description-text">Maximum 3 lines of text consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet color samet gradient nice.</h3>
+                </div>
+                <div class="buttons">
+                    <button id="demo-button">Request a 30 minute demo</button>
+                    <!-- div for clicked button -->
+                    <div id="info-banner"><img src="images/check.png" id="check" alt="checkmark">Your request has been sent</div>
+                    <!-- for clicked button -->
+                    <a href="">Learn more</a>
+                </div>
+                
+            </div>
+
+            <div class="visual" id="visual">
+                    <h3>Visual<br>Safe area</h3>
+                    <div class="logo">
+                        <div id="cloud">
+                            <div id="cloud1"></div>
+                            <div id="cloud2"></div>
+                        </div>
+                        <div id="heart"></div>
+                        <div id="small-bar"></div>
+                        <div id="medium-bar"></div>
+                        <div id="large-bar"></div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+
+    <div class="paras">
+        <div class="text-blocks" id="block-one">
+            <input type="radio" checked>
+            <h4 id="title-one">One Line lorem ipsum dolor sit amet</h4>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. lorem ipsum dolor sit amet lorem.</p>
+        </div>
+        <div class="text-blocks" id="block-two">
+            <input type="radio" checked>
+            <h4 id="title-two">One Line lorem ipsum dolor sit amet</h4>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. lorem ipsum dolor sit amet lorem.</p>
+        </div>
+        <div class="text-blocks" id="block-three">
+            <input type="radio" checked>
+            <h4 id="title-three">One Line lorem ipsum dolor sit amet</h4>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. lorem ipsum dolor sit amet lorem.</p>
+        </div>
+    </div>
+    
+    <!-- As I understand, below script is not required for this assignment however I wanted to give it a try.-->
+    <script>
+        const demoBtn = document.querySelector('#demo-button');
+        const infoBanner = document.querySelector('#info-banner');
+        const check = document.querySelector('#check');
+        demoBtn.addEventListener('click', () => {
+            demoBtn.remove();
+            infoBanner.style.display = 'inline';
+            check.style.display = 'inline';
+        });
+    </script>
+
+</body>
+</html>
